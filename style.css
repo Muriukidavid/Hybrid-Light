@@ -39,6 +39,7 @@ body {
 	color: #000;
 	font: 20px Georgia, 'Times New Roman', serif;
 	font-size: 15px;
+	lineheight:24px;
 	}
 #body-top{
 	width: 960px;
@@ -118,6 +119,7 @@ a:hover, a:active {
 /* Headers */
 h1 {
 	font-size: 42px;
+	line-height:32px;
 	}
 h2 {
 	font-size: 40px;
@@ -134,7 +136,7 @@ h5 {
 h6 {
 	font-size: 32px;
 	}
-h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
 	font-family:'Squada One', "Helvetica Neue", Arial, Helvetica, sans-serif;
 	color: #fff;
 	text-shadow: 0px 3px 8px #2A2A2A; 
@@ -387,7 +389,7 @@ p.page-links a {
 code {
 	padding: 0 3px;
 	font-family: "Ubuntu Mono", Courier, mono, serif;
-	color: #aaa;
+	color: #fff;
 	}
 pre {
 	overflow-x: hidden !important; overflow: hidden !important; position: relative; z-index: 999;
@@ -574,18 +576,22 @@ h3.widget-title {
 	}
 
 /* Tag cloud */
+.term-cloud {
+	line-height:28px;
+}
 .term-cloud a {
 	display: block;
-	background:rgba(128, 128, 128, 0.43);
+	background: rgba(128, 128, 128, 0.43);/*255,255,255,0.15);*/
 	margin: 0 5px 5px 0;
 	padding: 2px 4px;
 	float: left;
 	text-decoration: none;
+	color:#fff;
 }
 
 .term-cloud a:hover {
 	color: #333;
-	background: rgba(255,255,255,0.15);
+	background:rgba(128, 128, 128, 0.43);	
 }
 /* Widget search */
 .widget-search .search-text {
