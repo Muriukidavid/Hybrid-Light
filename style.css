@@ -1,11 +1,11 @@
 /**
  * Theme Name: Hybrid Light
- * Theme URI: https://themes.karibe.co.ke/hybrid-light
+ * Theme URI: https://github.com/Muriukidavid/Hybrid-Light/
  * Description: A simple theme based on Hybrid Original
  * Version: 0.1
  * Author: David Karibe
  * Author URI: http://karibe.co.ke
- * Tags: readeable text, borders, clean, sleek design
+ * Tags: readeable text, borders, clean, light design, hybrid
  * Template: hybrid
  *
  * Copyright (c) 2008 - 2010 Justin Tadlock.  All rights reserved.
@@ -27,10 +27,9 @@
 
 /** Get drop-downs CSS **/
 @import url('../hybrid/library/css/drop-downs.css');
-/* font for title */
+/* font for title and headings*/
 @import url(http://fonts.googleapis.com/css?family=Norican);
-@import url(http://fonts.googleapis.com/css?family=Rokkitt|Original+Surfer);
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Original+Surfer);
 @import url(http://fonts.googleapis.com/css?family=Squada+One);
 /* Body */
 body {
@@ -39,14 +38,11 @@ body {
 	background: url(images/bg.png);
 	color: #000;
 	font: 20px Georgia, 'Times New Roman', serif;
-	/*font-size: 2em;*/
-	/*text-shadow: black 0px 2px 1px;*/
 	font-size: 15px;
 	}
 #body-top{
 	width: 960px;
 	margin:0 auto 0 auto;
-	/*padding: 0 20px 0 20px;*/
 	height: 20px;
 	background: url("images/top2.png") no-repeat;
 	}
@@ -54,7 +50,6 @@ body {
 	overflow: hidden;
 	width: 960px;
 	margin: 0 auto 0 auto;
-	/*padding: 0px 20px 0 20px;*/
 	background: url("images/contentbg.png") repeat-y;
 	}
 #body-bottom{
@@ -86,19 +81,34 @@ a:hover, a:active {
 	width: 960px;
 	margin: 0 auto;
 	}
-#site-title {
-	font-size: 42px; /*2.3em !important*/;
-	margin-bottom: 9px;
-	line-height: 27px;
+#header div#site-title{
+		margin: 0 0 10px 0;
+	}
+#header div#site-title a{
 	font-family: 'Norican', cursive;
-	text-shadow: black 0px 4px 2px;
+	text-shadow: black 0px 5px -1px;
+	font-size: 42px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 27px;
 	}
-#site-title a {
-	color: #fff;/*5f97b1;*/
+#header h1#site-title a{
+	font-family: 'Norican', cursive;
+	text-shadow: black 0px 5px -1px;
+	font-size: 42px; 
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 27px;
 	}
+#header h1{
+	margin: 0 0 5px 0;
+	}
+#site-title {
+	color: #fff;
+	}
+	
 #site-description {
 	font:20px Georgia, 'Time new roman', sans-serif;
-	/*line-height:1.2;*/
 	font-weight: bolder;
 	color: #333;
 	text-shadow:#eee 0px 1px 0px;
@@ -106,6 +116,9 @@ a:hover, a:active {
 	}
 
 /* Headers */
+h1 {
+	font-size: 42px;
+	}
 h2 {
 	font-size: 40px;
 	}
@@ -113,7 +126,7 @@ h3 {
 	font-size: 38px;
 	}
 h4 {
-	font-size: 36px;
+	font-size: 38px;
 	}
 h5 {
 	font-size: 34px;
@@ -121,9 +134,10 @@ h5 {
 h6 {
 	font-size: 32px;
 	}
-h1, h2, h3, h4, h5, h6 {
-	color: #000;
-	font-family:'Squada One', "Helvetica Neue", Arial, Helvetica, sans-serif;/* Original Surfer, cursive; */
+h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+	font-family:'Squada One', "Helvetica Neue", Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-shadow: 0px 3px 8px #2A2A2A; 
 	}
 
 img{
@@ -184,7 +198,6 @@ span.pullquote {
 	float: left;
 	width: 580px;
 	padding: 10px;
-	/*background: #333 url(images/bg.jpg);*/
 	}
 .no-widgets .content, .no-default-widgets .content, .primary-inactive.secondary-inactive .content {
 	width: 920px;
@@ -218,7 +231,6 @@ span.pullquote {
 	color: #fff;
 	}
 .entry-content h2, .entry-content h3 {
-	/*font-family: 'Comfortaa', serif;*/
 	font-family:'Squada One', "Helvetica Neue", Arial, Helvetica, sans-serif;
 	font-weight: 200;
 	line-height: 140%;
@@ -242,7 +254,7 @@ span.pullquote {
 	color: gray;
 	}
 .byline a {
-	color: #333;/*#3C738C;*/
+	color: #333;
 	}
 
 /* Post meta data */
@@ -250,7 +262,7 @@ span.pullquote {
 	clear: both;
 	display: block;
 	padding: 9px 0 0 0;
-	font-size: 18px;/*.85em;*/
+	font-size: 18px;
 	font-style: italic;
 	color: #3c3c3c;
 	border-top: 1px solid #444;
@@ -276,7 +288,7 @@ p.page-links a {
 	}
 /* Series */
 .series-title {
-	font-size: 1.2em;
+	font-size: 32px;
 	}
 
 /* Page templates */
@@ -526,6 +538,8 @@ h3.widget-title {
 	line-height: 140%;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
+	text-shadow:none;
+	color: #000;
 }
 #subsidiary .widget-title {
 	color: #fff;
@@ -541,7 +555,7 @@ h3.widget-title {
 	background: url(images/bullet.gif) no-repeat 0 6px;
 	}
 .widget li.current-cat a, .widget li.current_page_item a {
-	color:#aaa; /*#232c36;*/
+	color:#aaa; 
 	}
 .widget li.current-cat li a, .widget li.current_page_item li a {
 	color:#aa3; #2f6eb9;
@@ -576,7 +590,7 @@ h3.widget-title {
 /* Widget search */
 .widget-search .search-text {
 	width: 230px;
-/*	font-family: Ubuntu, DejaVu Sans, Lucida Grande, Verdana, Arial, sans-serif;*/
+	font-family: Ubuntu, DejaVu Sans, Lucida Grande, Verdana, Arial, sans-serif;
 	}
 
 /* Widget categories */
@@ -611,7 +625,7 @@ h3.widget-title {
 
 /* Comment headers */
 #comments-number, #reply {
-	font-size: 20px;
+	font-size: 30px;
 	}
 li.author #reply {
 	color: #f7f7f7;
@@ -635,7 +649,7 @@ li.author #reply {
 	padding: 9px 9px 0 9px;
 	color: #333;
 	border-bottom: 1px solid #444;
-	background: #cecece;/*#1b1b1b;*/
+	background: #cecece;
 	}
 #comments li li, #comments li.author li li {
 	color: #313131;
@@ -661,11 +675,11 @@ li.author #reply {
 
 /* Comment links */
 #comments li a, #comments li.author li a, #comments li.author li.author li a {
-	color: #515711;/*#3C738C;*/
+	color: #515711;
 	text-decoration: underline;
 	} 
 #comments li.author a, #comments li.author li.author a, #comments li.author li.author li.author a {
-	color: #aaa; /*#A6C2CF;*/
+	color: #aaa; 
 	border-color: #333;
 	}
 
@@ -733,7 +747,7 @@ textarea {
 	border: none;
 	}
 li.entry-author .button, li.entry-author #submit {
-	background: ##858585;
+	background: #858585;
 	}
 .button:hover, #submit:hover {
 	cursor: pointer;
@@ -769,11 +783,7 @@ li.entry-author .button, li.entry-author #submit {
 	margin-right: 9px;
 	}
 
-/*
-span.before {
-	font-family: Ubuntu, DejaVu Sans, Lucida Grande, Verdana, Arial, sans-serif;
-}
-*/
+
 /* Override the weird gallery-item margin from 21px.css */
 dl.gallery-item {
 	margin: 0;
