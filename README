@@ -2,4 +2,4 @@ A Hybrid child theme for WordPress 3.0+, based on Hybrid Original 0.2.
 Requires the Hybrid parent theme to work.
 
 The header and footer templates position were edited to detatch their content from the main content
-container and top and bottom background box-divs introduced.
+container and top/bottom background box-divs were introduced.
